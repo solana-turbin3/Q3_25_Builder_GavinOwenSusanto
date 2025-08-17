@@ -147,7 +147,7 @@ impl<'info> Payment<'info> {
             to: self.user.to_account_info(),
         };
 
-        // 1. PDA signing
+        // 1. PDA signing / invoke signed
         let seeds= &[
             b"vault",
             self.vault_state.to_account_info().key.as_ref(),
