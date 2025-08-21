@@ -42,7 +42,7 @@ pub struct Make<'info> {
     #[account(
         init,
         payer = maker,
-        associated_token::mint = mint_b,
+        associated_token::mint = mint_a,
         associated_token::authority = escrow,
         associated_token::token_program = token_program,
     )]
